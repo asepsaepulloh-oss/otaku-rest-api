@@ -117,8 +117,6 @@ For educational purposes only. All content belongs to Otakudesu.
 
 Author
 
-Otakudesu REST API Team
+Gabriell Dewaruci
 
 ```
-
----
