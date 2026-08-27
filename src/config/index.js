@@ -4,6 +4,10 @@ module.exports = {
   port: process.env.PORT || 3000,
   baseUrl: process.env.BASE_URL || 'https://otakudesu.blog',
   nodeEnv: process.env.NODE_ENV || 'development',
+  corsOrigins: (process.env.CORS_ORIGINS || '')
+    .split(',')
+    .map((origin) => origin.trim())
+    .filter(Boolean),
   rateLimit: {
     windowMs: parseInt(process.env.RATE_LIMIT_WINDOW) * 60 * 1000 || 15 * 60 * 1000,
     max: parseInt(process.env.RATE_LIMIT_MAX) || 100
